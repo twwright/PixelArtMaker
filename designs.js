@@ -20,10 +20,14 @@ function makeGrid() {
         let row = canvas.insertRow(row);
         for (col of gridWidth) {
             let newCell = row.insertCell(col);
-			let colorChoice = document.getElementById('colorPicker').value;
-            newCell.addEventListener('click', e => {
-			e.target.style.backgroundColor = colorChoice;
+            paintable(newCell);
         }
     }
 }
 
+let colorChoice = document.getElementById('colorPicker').value;
+function paintable(cell) {
+    cell.addEventListener('click', e => {
+        e.target.style.backgroundColor = colorChoice;
+    });
+}
