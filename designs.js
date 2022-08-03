@@ -10,8 +10,8 @@ function makeGrid() {
     const canvas = document.getElementById('pixelCanvas');
     clear(canvas);
 
-    const inputWidth = document.getElementById('inputWidth').value;
-    const inputHeight = document.getElementById('inputHeight').value;
+    const gridWidth = document.getElementById('inputWidth').value;
+    const gridHeight = document.getElementById('inputHeight').value;
 
     for (let i=0; i<gridHeight; i++) {
         let row = canvas.insertRow(i);
