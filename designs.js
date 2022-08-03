@@ -33,5 +33,6 @@ function paintable(cell) {
 }
 
 document.getElementById('sizePicker').addEventListener('submit', e => {
+    e.preventDefault();
     makeGrid();
 });
