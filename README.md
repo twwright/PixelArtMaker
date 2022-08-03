@@ -1,9 +1,3 @@
-# Pixel Art Maker Project
+# Pixel Art Maker
 
-## Table of Contents
-
-* [Instructions](#instructions)
-
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
+A simple website written in JavaScript that manipulates the DOM to allow the user to make pixel drawings! :)
