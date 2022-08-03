@@ -23,8 +23,9 @@ function makeGrid() {
 }
 
 function paintable(cell) {
-    let colorChoice = document.getElementById('colorPicker').value;
+    let colorChoice;
     cell.addEventListener('click', e => {
+        colorChoice = document.getElementById('colorPicker').value;
         e.target.style.backgroundColor = colorChoice;
     });
 }
