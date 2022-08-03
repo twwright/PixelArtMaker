@@ -13,13 +13,10 @@ function makeGrid() {
     const inputWidth = document.getElementById('inputWidth').value;
     const inputHeight = document.getElementById('inputHeight').value;
 
-    const gridWidth = new Array(inputWidth).fill().map((_, idx) => idx);
-    const gridHeight = new Array(inputHeight).fill().map((_, idx) => idx);
-
-    for (row of gridHeight) {
-        let row = canvas.insertRow(row);
-        for (col of gridWidth) {
-            let newCell = row.insertCell(col);
+    for (let i=0; i<gridHeight; i++) {
+        let row = canvas.insertRow(i);
+        for (let j=o; j<gridWidth; j++) {
+            let newCell = row.insertCell(j);
             paintable(newCell);
         }
     }
