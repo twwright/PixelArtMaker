@@ -1,14 +1,14 @@
 'use strict';
 
-function clear(canvas) {
+function clearCanvas() {
+    const canvas = document.getElementById('pixelCanvas');
     while (canvas.rows.length != 0) {
         canvas.deleteRow(0);
     }
 }
 
 function makeGrid() {
-    const canvas = document.getElementById('pixelCanvas');
-    clear(canvas);
+    clearCanvas();
 
     const gridWidth = document.getElementById('inputWidth').value;
     const gridHeight = document.getElementById('inputHeight').value;
@@ -36,5 +36,6 @@ document.getElementById('sizePicker').addEventListener('submit', e => {
 });
 
 document.getElementById('clearCanvas').addEventListener('reset', e => {
-    clear
+    e.preventDefault();
+    clearCanvas();
 })
