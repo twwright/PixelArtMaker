@@ -25,8 +25,8 @@ function makeGrid() {
     }
 }
 
-let colorChoice = document.getElementById('colorPicker').value;
 function paintable(cell) {
+    let colorChoice = document.getElementById('colorPicker').value;
     cell.addEventListener('click', e => {
         e.target.style.backgroundColor = colorChoice;
     });
