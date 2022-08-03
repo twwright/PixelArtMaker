@@ -38,7 +38,10 @@ document.getElementById('sizePicker').addEventListener('submit', e => {
 
 document.getElementById('sizePicker').addEventListener('reset', e => {
     e.preventDefault();
-    makeGrid();
+    const cells = document.querySelectorAll('td');
+    for (let cell of cells) {
+        cell.removeAttribute('style');
+    }
 })
 
 document.addEventListener('DOMContentLoaded', makeGrid());
