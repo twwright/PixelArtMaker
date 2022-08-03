@@ -15,7 +15,7 @@ function makeGrid() {
 
     for (let i=0; i<gridHeight; i++) {
         let row = canvas.insertRow(i);
-        for (let j=o; j<gridWidth; j++) {
+        for (let j=0; j<gridWidth; j++) {
             let newCell = row.insertCell(j);
             paintable(newCell);
         }
