@@ -40,3 +40,5 @@ document.getElementById('sizePicker').addEventListener('reset', e => {
     e.preventDefault();
     makeGrid();
 })
+
+document.addEventListener('DOMContentLoaded', makeGrid());
