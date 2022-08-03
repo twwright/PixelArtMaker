@@ -1,7 +1,8 @@
 'use strict';
 
+const canvas = document.getElementById('pixelCanvas');
+
 function clearCanvas() {
-    const canvas = document.getElementById('pixelCanvas');
     while (canvas.rows.length != 0) {
         canvas.deleteRow(0);
     }
@@ -35,7 +36,7 @@ document.getElementById('sizePicker').addEventListener('submit', e => {
     makeGrid();
 });
 
-document.getElementById('clearCanvas').addEventListener('reset', e => {
+document.getElementById('sizePicker').addEventListener('reset', e => {
     e.preventDefault();
-    clearCanvas();
+    makeGrid();
 })
