@@ -31,3 +31,7 @@ function paintable(cell) {
         e.target.style.backgroundColor = colorChoice;
     });
 }
+
+document.getElementById('sizePicker').addEventListener('submit', e => {
+    makeGrid();
+});
