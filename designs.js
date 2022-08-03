@@ -34,3 +34,7 @@ document.getElementById('sizePicker').addEventListener('submit', e => {
     e.preventDefault();
     makeGrid();
 });
+
+document.getElementById('clearCanvas').addEventListener('reset', e => {
+    clear
+})
